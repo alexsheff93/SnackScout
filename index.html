@@ -7,11 +7,15 @@
 
   <title>SnackScout | Find Your Next Favourite Treat</title>
 
-  <meta name="description" content="Discover chocolates, sweets, drinks and exciting snack finds with SnackScout.">
+  <meta
+    name="description"
+    content="Discover chocolates, sweets, drinks and exciting snack finds with SnackScout."
+  >
 
   <style>
+
     /* =========================================
-       SNACKSCOUT - BRAND SETTINGS
+       SNACKSCOUT BRAND
     ========================================= */
 
     :root {
@@ -49,11 +53,6 @@
     a {
       color: inherit;
       text-decoration: none;
-    }
-
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
     }
 
     /* =========================================
@@ -252,7 +251,7 @@
     }
 
     /* =========================================
-       HERO ART
+       HERO BROWNIE IMAGE
     ========================================= */
 
     .hero-art {
@@ -279,11 +278,23 @@
       place-items: center;
 
       transform: rotate(5deg);
+
+      overflow: hidden;
     }
 
-    .big-snack {
-      font-size: 160px;
-      transform: rotate(-8deg);
+    .brownie-image {
+      width: 85%;
+      max-width: 340px;
+
+      height: auto;
+
+      object-fit: contain;
+
+      transform: rotate(-4deg);
+
+      border-radius: 18px;
+
+      display: block;
     }
 
     .floating {
@@ -303,6 +314,7 @@
     .one {
       top: 15px;
       right: 0;
+
       transform: rotate(8deg);
     }
 
@@ -732,6 +744,7 @@
         <a href="#categories">Categories</a>
         <a href="#finds">Latest Finds</a>
         <a href="#about">About</a>
+
         <a class="nav-cta" href="#newsletter">
           Join the Club ✨
         </a>
@@ -782,12 +795,23 @@
 
         </div>
 
+        <!-- =====================================
+             BROWNIE IMAGE
+
+             File must be named brownies.webp
+             and be in the same folder as index.html
+        ====================================== -->
+
         <div class="hero-art">
 
           <div class="snack-cloud">
-            <div class="big-snack">
-              🍬
-            </div>
+
+            <img
+              class="brownie-image"
+              src="brownies.webp"
+              alt="Super gooey hot fudge chocolate brownie"
+            >
+
           </div>
 
           <div class="floating one">
@@ -804,7 +828,9 @@
 
     </section>
 
-    <!-- CATEGORIES -->
+    <!-- =========================================
+         CATEGORIES
+    ========================================= -->
 
     <section class="section" id="categories">
 
@@ -864,7 +890,9 @@
 
     </section>
 
-    <!-- FEATURED FINDS -->
+    <!-- =========================================
+         FEATURED FINDS
+    ========================================= -->
 
     <section class="section" id="finds">
 
@@ -901,7 +929,7 @@
               to explore.
             </p>
 
-            <!-- REPLACE # WITH YOUR AFFILIATE LINK -->
+            <!-- REPLACE # WITH YOUR REAL AFFILIATE LINK -->
 
             <a
               class="btn primary"
@@ -938,7 +966,7 @@
               for your next craving.
             </p>
 
-            <!-- REPLACE # WITH YOUR AFFILIATE LINK -->
+            <!-- REPLACE # WITH YOUR REAL AFFILIATE LINK -->
 
             <a
               class="btn primary"
@@ -975,7 +1003,7 @@
               worth checking out.
             </p>
 
-            <!-- REPLACE # WITH YOUR AFFILIATE LINK -->
+            <!-- REPLACE # WITH YOUR REAL AFFILIATE LINK -->
 
             <a
               class="btn primary"
@@ -993,7 +1021,9 @@
 
     </section>
 
-    <!-- ABOUT -->
+    <!-- =========================================
+         ABOUT
+    ========================================= -->
 
     <section class="why" id="about">
 
@@ -1066,7 +1096,9 @@
 
     </section>
 
-    <!-- NEWSLETTER -->
+    <!-- =========================================
+         NEWSLETTER
+    ========================================= -->
 
     <section class="newsletter" id="newsletter">
 
@@ -1085,7 +1117,7 @@
 
         </div>
 
-        <!-- REPLACE THE EMAIL ADDRESS -->
+        <!-- REPLACE WITH YOUR BUSINESS EMAIL -->
 
         <a
           class="btn dark"
@@ -1129,7 +1161,7 @@
         <a href="#finds">Latest Finds</a>
         <a href="#about">About</a>
 
-        <!-- REPLACE THE EMAIL ADDRESS -->
+        <!-- REPLACE WITH YOUR BUSINESS EMAIL -->
 
         <a href="mailto:YOUR-BRAND-EMAIL@example.com">
           Contact
